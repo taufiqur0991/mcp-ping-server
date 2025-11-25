@@ -1,0 +1,15 @@
+[project]
+name = "mcp_ping_server"
+version = "0.1.0"
+description = "Simple MCP ping server"
+authors = [
+    { name = "ChatGPT" }
+]
+requires-python = ">=3.10"
+
+dependencies = [
+    "mcp[cli] >= 1.6.0"
+]
+
+[project.scripts]
+mcp-ping-server = "ping_server:main"
